@@ -1,13 +1,13 @@
 <h1>Users</h1>
 <table class='table table-striped'>
   <tr>
-    <th>ID</th>
     <th>Name</th>
+    <th>Quote</th>
   </tr>
   {{#each user in users}}
     <tr>
-      <td>{{user.id}}</td>
       <td>{{#linkTo 'users.show' user}}{{user.fullName}}{{/linkTo}}</td>
+      <td>{{user.quote}}</td>
     </tr>
   {{/each}}
 </table>
