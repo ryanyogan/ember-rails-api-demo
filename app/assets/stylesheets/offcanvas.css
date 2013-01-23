@@ -1260,6 +1260,9 @@ body.off-canvas { padding: 0; margin: 0; }
   color: #E96151;
 }
 
+input[type='text'],textarea {font-size:1em;}
+
+
 @media all and (min-width: 768px) { menu-button, .sidebar-button { display: none; }
   [role="complementary"] { width: 20%; margin-left: 0; float: left; padding: 0 15px; }
   [role="main"] { width: 80%; padding: 0 15px; }
