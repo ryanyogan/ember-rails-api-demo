@@ -11,7 +11,10 @@ App.Router.map (match) ->
       path: '/:user_id'
 
 App.IndexRoute = Ember.Route.extend
+  model: ->
+    App.User.find()
   setupController: (controller, model) ->
+    controller.set('users', model)
     @controllerFor('application').set('currentRoute', 'home')
 
 App.UsersRoute = Ember.Route.extend
