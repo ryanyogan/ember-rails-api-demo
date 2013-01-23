@@ -1,22 +1,38 @@
-<div class='navbar navbar-inverse navbar-fixed-top'>
-  <div class='navbar-inner'>
-    <div class='container'>
-      <div class='nav-collapse collapse'>
-        <ul class='nav'>
-          <li {{bindAttr class="isHome:active"}}>{{#linkTo 'index'}}Home{{/linkTo}}</li>
-          <li {{bindAttr class="isUsers:active"}}>{{#linkTo 'users.index'}}Users{{/linkTo}}</li>
-        </ul>
+<div class="container">
+
+    <header id="header" class="row">
+      <div class="eight columns phone-two">
+        <h2 id="site-title"><a href="/">Ember / Rails-API</a></h2>
       </div>
+      <div class="four columns phone-two">
+        <nav id="menu" role="navigation" class="hide-for-small">
+          <ul id="mainNav" class="nav-bar">
+            <li {{bindAttr class="isHome:active"}}>{{#linkTo 'index'}}Home{{/linkTo}}</li>
+            <li {{bindAttr class="isUsers:active"}}>{{#linkTo 'users.index'}}Users{{/linkTo}}</li>
+          </ul>
+        </nav>
+        <p class="show-for-small">
+          <a class='sidebar-button button' id="sidebarButton" href="#sidebar" >Menu</a>
+        </p>
+      </div>
+    </header>
+
+    <div class="row">
+      <section role="main">
+        <div class="row">
+          <div class="twelve columns">
+            {{outlet}}
+          </div>
+        </div>
+      </section>
+
+      <section id="sidebar" role="complementary">
+        <nav id="sideMenu" role="navigation">
+          <ul id="sideMainNav" class="nav-bar">
+            <li {{bindAttr class="isHome:active"}}>{{#linkTo 'index'}}Home{{/linkTo}}</li>
+            <li {{bindAttr class="isUsers:active"}}>{{#linkTo 'users.index'}}Users{{/linkTo}}</li>
+          </ul>
+        </nav>
+      </section>
     </div>
   </div>
-</div>
-<div class='container' id='main'>
-  <div class='content'>
-    <div class='row'>
-      <div class='span12'>
-        <div class='page-header'></div>
-        {{outlet}}
-      </div>
-    </div>
-  </div>
-</div>
