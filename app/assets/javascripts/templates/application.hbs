@@ -81,11 +81,13 @@
     });
   }
 
-  $('#nav li a').on(events, function (e) {
+  $('#nav li a').click( function (e) {
     e.preventDefault();
     var href = $(this).attr('href'),
       $target = $(href);
     $('html, body').animate({scrollTop : $target.offset().top}, 300);
+    $('body').toggleClass('active');
+    alert('hi')
   });
 }(this, document, jQuery));
 </script>
