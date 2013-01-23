@@ -1,13 +1,17 @@
 
-<table class='table table-striped'>
-  <tr>
-    <th>Latest Updates</th>
-  </tr>
-  {{#each user in users}}
+<table class='twelve'>
+  <thead>
     <tr>
-      <td>{{#linkTo 'users.show' user}}{{user.quote}}{{/linkTo}}</td>
+      <th>Latest Updates</th>
     </tr>
-  {{/each}}
+  </thead>
+  <tbody>
+    {{#each user in users}}
+      <tr>
+        <td>{{#linkTo 'users.show' user}}{{user.quote}}{{/linkTo}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
 </table>
 
 {{#linkTo 'users.new' class='button'}}Create{{/linkTo}}
