@@ -1,14 +1,14 @@
 <div class="container">
 
     <header id="header" class="row">
-      <div class="four columns phone-two">
-        <h1 id="site-title"><a href="http://zurb.com/playground/">ZURB</a></h1>
-      </div>
       <div class="eight columns phone-two">
+        <h2 id="site-title"><a href="/">Ember / Rails-API</a></h2>
+      </div>
+      <div class="four columns phone-two">
         <nav id="menu" role="navigation" class="hide-for-small">
           <ul id="mainNav" class="nav-bar">
             <li {{bindAttr class="isHome:active"}}>{{#linkTo 'index'}}Home{{/linkTo}}</li>
-          <li {{bindAttr class="isUsers:active"}}>{{#linkTo 'users.index'}}Users{{/linkTo}}</li>
+            <li {{bindAttr class="isUsers:active"}}>{{#linkTo 'users.index'}}Users{{/linkTo}}</li>
           </ul>
         </nav>
         <p class="show-for-small">
@@ -20,18 +20,8 @@
     <div class="row">
       <section role="main">
         <div class="row">
-          <div class="eight columns">
+          <div class="twelve columns">
             {{outlet}}
-          </div>
-          <div class="four columns">
-            <h4>Sidebar</h4>
-            <ul class="disc">
-              <li><a href="#">Link to a Category</a></li>
-              <li><a href="#">Link to a Category</a></li>
-              <li><a href="#">Link to a Category</a></li>
-              <li><a href="#">Link to a Category</a></li>
-              <li><a href="http://en.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past">Link to the Past</a></li>
-            </ul>
           </div>
         </div>
       </section>
@@ -40,15 +30,9 @@
         <nav id="sideMenu" role="navigation">
           <ul id="sideMainNav" class="nav-bar">
             <li {{bindAttr class="isHome:active"}}>{{#linkTo 'index'}}Home{{/linkTo}}</li>
-          <li {{bindAttr class="isUsers:active"}}>{{#linkTo 'users.index'}}Users{{/linkTo}}</li>
+            <li {{bindAttr class="isUsers:active"}}>{{#linkTo 'users.index'}}Users{{/linkTo}}</li>
           </ul>
         </nav>
       </section>
     </div>
-
-    <footer class="site-footer row" role="contentinfo">
-      <div class="twelve columns">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </div>
-    </footer>
   </div>

@@ -1,8 +1,7 @@
-<h1>{{headerTitle}} {{fullName}}</h1>
+<h3>{{headerTitle}} {{fullName}}</h3>
 <form>
-  <fieldset>
     <div>
-      <label {{bindAttr for='firsNameField.elementId'}}>First Mame</label>
+      <label {{bindAttr for='firsNameField.elementId'}}>First Name</label>
       {{view Ember.TextField valueBinding='firstName' name='first_name' viewName='firstNameField'}}
     </div>
     <div>
@@ -13,9 +12,9 @@
       <label {{bindAttr for='quoteField.elementId'}}>Quote</label>
       {{view Ember.TextArea valueBinding='quote' name='quote' viewName='quoteField'}}
     </div>
-    <a href='#' {{action save}} class='btn btn-success'>{{buttonTitle}}</a>
-  </fieldset>
 </form>
-<div class='page-header'></div>
-<a href='#' {{action cancel target='controller'}} class='btn btn-inverse'>Cancel</a>
+<a href='#' {{action save}} class='button'>{{buttonTitle}}</a>
+<br>
+<br>
+<a href='#' {{action cancel target='controller'}} class='secondary button'>Cancel</a>
 

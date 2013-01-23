@@ -1,10 +1,12 @@
-<h1>{{fullName}}</h1>
+<h3>{{fullName}}</h3>
 
 <div>
-  <q>{{quote}}</q>
+  <p><q>{{quote}}</q></p>
 </div>
 
 <div class='page-header'></div>
+{{#linkTo 'users.edit' content class='button'}}Edit User{{/linkTo}}
+<br>
+<br>
+{{#linkTo 'users' class='secondary button'}}Back{{/linkTo}}
 
-{{#linkTo 'users' class='btn'}}Back{{/linkTo}}
-{{#linkTo 'users.edit' content class='btn btn-primary'}}Edit User{{/linkTo}}

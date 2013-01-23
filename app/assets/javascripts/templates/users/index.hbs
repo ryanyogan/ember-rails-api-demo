@@ -1,15 +1,19 @@
-<h1>Users</h1>
-<table class='table table-striped'>
-  <tr>
-    <th>Name</th>
-    <th>Quote</th>
-  </tr>
+<h3>Users</h3>
+<table class='twelve'>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Quote</th>
+    </tr>
+  </thead>
+  <tbody>
   {{#each user in users}}
     <tr>
       <td>{{#linkTo 'users.show' user}}{{user.fullName}}{{/linkTo}}</td>
       <td>{{user.quote}}</td>
     </tr>
   {{/each}}
+  <tbody>
 </table>
 
-{{#linkTo 'users.new' class='btn btn-primary'}}Add new user{{/linkTo}}
+{{#linkTo 'users.new' class='button'}}Add new user{{/linkTo}}
