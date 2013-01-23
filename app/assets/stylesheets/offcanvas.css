@@ -4,7 +4,7 @@
 
 html { background: #ECECE7; font-size: 62.5%; }
 
-body { background: #ECECE7; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1; color: #0F3D48; position: relative; -webkit-font-smoothing: antialiased; }
+body { padding-bottom: 20px; background: #ECECE7; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1; color: #0F3D48; position: relative; -webkit-font-smoothing: antialiased; }
 
 /* Links ---------------------- */
 a { color: #366774; text-decoration: none; line-height: inherit; }
